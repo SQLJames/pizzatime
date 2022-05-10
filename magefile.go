@@ -22,11 +22,12 @@ import (
 
 var (
 	goexe = "go"
-	dirs  = []string{"bin"}
+	dirs  = []string{"bin", "tmp"}
 
 	targets = []helpers.Target{
 		{GOOS: "linux", GOARCH: "amd64"},
 		{GOOS: "darwin", GOARCH: "amd64"},
+		{GOOS: "windows", GOARCH: "amd64"},
 	}
 )
 
